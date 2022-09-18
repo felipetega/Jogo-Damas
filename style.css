@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  background-color: darkgray;
+  background-image: linear-gradient(to left,#344550,#9bd7db);
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tabuleiro{
+  height: 60vh;
+  width: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to left,#344550,#9bd7db);
+}
+
+.casas{
+  display: inline-block;
+  width: 5vh;
+  height: 5vh;
+}
+/*CASAS BRANCAS*/
+#fileira1 .casas:nth-child(even), #fileira3 .casas:nth-child(even),
+#fileira5 .casas:nth-child(even),
+#fileira7 .casas:nth-child(even),
+#fileira9 .casas:nth-child(even),#fileira2 .casas:nth-child(odd), #fileira4 .casas:nth-child(odd),
+#fileira6 .casas:nth-child(odd),
+#fileira8 .casas:nth-child(odd),
+#fileira10 .casas:nth-child(odd){
+  background-color: white;
+  color: white;
+ }
+/*CASAS PRETAS*/
+#fileira1 .casas:nth-child(odd), #fileira3 .casas:nth-child(odd),
+#fileira5 .casas:nth-child(odd),
+#fileira7 .casas:nth-child(odd),
+#fileira9 .casas:nth-child(odd),#fileira2 .casas:nth-child(even), #fileira4 .casas:nth-child(even),
+#fileira6 .casas:nth-child(even),
+#fileira8 .casas:nth-child(even),
+#fileira10 .casas:nth-child(even){
+  background-color: black;
+  color: black;
+}
+
+#peca1{
+  background-color: gray;
+}
